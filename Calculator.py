@@ -175,6 +175,9 @@ button_power= Button(root, text='^', padx=40,pady=20,command=lambda :onClick('^'
 button_equal= Button(root, text='=', padx=40,pady=20,command=calculator).grid(row=5, column=2)
 button_clear = Button(root,padx=30,pady=20,text='Clear',command=clear).grid(row=6,column=0)
 button_back = Button(root,padx=30,pady=20,text='<---',command=backspace).grid(row=6,column=1)
-button_dot = Button(root,text='.',padx=40,pady=20,command=lambda :onClick('.')).grid(row=6,column=2)
+button_0 = Button(root,padx=40,pady=20,text='0',command=lambda :onClick('0')).grid(row=6,column=2)
+button_dot = Button(root,text='.',padx=40,pady=20,command=lambda :onClick('.')).grid(row=7,column=0)
+button_bracket = Button(root,text='(',padx=40,pady=20,command=lambda :onClick('(')).grid(row=7,column=1)
+button_bracket2 = Button(root,text=')',padx=40,pady=20,command=lambda :onClick(')')).grid(row=7,column=2)
 #Run Loop
 root.mainloop()
